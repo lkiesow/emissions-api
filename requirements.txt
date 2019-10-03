@@ -1,8 +1,10 @@
+Pandas
 flask
 gdal
 geoalchemy2
 iso8601
 numpy
 psycopg2
+sentinelsat
 sqlalchemy
 urllib3
