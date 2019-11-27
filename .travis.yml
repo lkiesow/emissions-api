@@ -23,9 +23,7 @@ jobs:
         apt:
           packages:
             - postgresql-9.6-postgis-2.4
-            - python3-gdal
             - python3-pycurl
-            - python3-psycopg2
       before_script:
         - psql -U postgres -c 'create database emissionsapi;'
         - psql -U postgres -c 'create extension postgis' emissionsapi
@@ -38,9 +36,7 @@ jobs:
       addons:
         apt:
           packages:
-            - python3-gdal
             - python3-pycurl
-            - python3-psycopg2
       install:
         - pip install sphinx sphinx-rtd-theme
         - pip install -r requirements.txt
